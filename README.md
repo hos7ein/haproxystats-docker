@@ -17,7 +17,7 @@ It is designed to satisfy the following requirements:
 
 ### Build ###
 
-To build haproxystats-docker, After clone the project you should run the beneath command:
+To build haproxystats-docker, after clone the project you should run the beneath command:
 ```
 docker build --tag hos7ein/haproxystats  .
 ```
@@ -30,7 +30,7 @@ To launch a container you can use this instruction:
 docker run -it -d --restart always --name [container-name] --hostname=[container-Hostanme] -v [path-of-haproxystats-config-file]:/etc/haproxystats -v [path-of-haproxy-sock-files]:/var/lib/haproxy  hos7ein/haproxystats
 ```
 
-For example :
+For example:
 ```
 docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haproxy1 -v /root/haproxystats:/etc/haproxystats -v /var/lib/haproxy:/var/lib/haproxy  hos7ein/haproxystats
 ```
