@@ -34,3 +34,7 @@ For example:
 ```
 docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haproxy1 -v /root/haproxystats:/etc/haproxystats -v /var/lib/haproxy:/var/lib/haproxy  hos7ein/haproxystats
 ```
+
+### Sample shot ###
+
+![grafana](https://raw.githubusercontent.com/hos7ein/haproxystats-docker/master/Pictures/1-grafana.png)
