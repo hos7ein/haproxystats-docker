@@ -17,7 +17,7 @@ It is designed to satisfy the following requirements:
 
 ### Build ###
 
-To build `haproxystats-docker`, after clone the project you should run the beneath command:
+To build `haproxystats-docker`, after clone the project you should run the beneath command, even though this image is published under [my repository on the Docker Hub](https://hub.docker.com/r/hos7ein/haproxystats) and all you need as a prerequisite is having docker on your machine.
 ```
 docker build --tag hos7ein/haproxystats  .
 ```
