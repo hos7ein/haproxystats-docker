@@ -38,3 +38,14 @@ docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haprox
 ### Sample shot ###
 
 ![grafana](https://raw.githubusercontent.com/hos7ein/haproxystats-docker/master/Pictures/1-grafana.png)
+
+
+## Contact
+
+Hossein Aghaie [@hos7ein](http://twitter.com/hos7ein)
+
+
+## License
+
+haproxystats-docker source code is available under the GPL-3.0 [License](/LICENSE).
+
