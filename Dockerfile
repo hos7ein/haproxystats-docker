@@ -7,8 +7,8 @@ MAINTAINER hos7ein <hossein.a97@gmail.com>
 
 # Install all prerequisites
 RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor       &&\
-    rm -rf /var/cache/apk/*                                                     &&\
-    pip3 install haproxystats
+    rm -rf /var/cache/apk/*                                                 &&\
+    pip3 install numpy ; pip3 install haproxystats
 
 # Configure haproxystats
 RUN mkdir -p                             /etc/haproxystats     /var/lib/haproxy
