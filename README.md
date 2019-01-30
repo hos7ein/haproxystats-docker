@@ -32,7 +32,7 @@ docker run -it -d --restart always --name [container-name] --hostname=[container
 
 For example:
 ```
-docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haproxy1 -v /root/haproxystats:/etc/haproxystats -v /var/lib/haproxy:/var/lib/haproxy  hos7ein/haproxystats
+docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haproxystats -v /opt/haproxystats:/etc/haproxystats -v /var/lib/haproxy:/var/lib/haproxy  hos7ein/haproxystats
 ```
 
 ### Sample shot ###
