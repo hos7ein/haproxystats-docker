@@ -46,8 +46,7 @@ docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haprox
 
 **Author**: Hossein Aghaie <hossein.a97@gmail.com>
 
-**Twitter**: <a href="https://twitter.com/hos7ein" target="_blank">****@hos7ein****</a>
-
+**Twitter**: Hossein Aghaie [@hos7ein](https://twitter.com/hos7ein)
 
 
 ## License
