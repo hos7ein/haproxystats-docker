@@ -1,5 +1,5 @@
 FROM alpine:3.8
-MAINTAINER hos7ein <hossein.a97@gmail.com>
+LABEL maintainer="fedorafans.com <hossein.a97@gmail.com>"
 
 # ---------------- #
 #   Installation   #
