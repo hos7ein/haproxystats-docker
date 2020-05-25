@@ -1,23 +1,21 @@
-FROM alpine:3.9
+FROM alpine:latest
 LABEL maintainer="fedorafans.com <hossein.a97@gmail.com>"
 
 # ---------------- #
 #   Installation   #
 # ---------------- #
 
-# Install all prerequisites
+# Install and setup all prerequisites
 RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor       &&\
     rm -rf /var/cache/apk/*                                                 &&\
-    pip3 install numpy ; pip3 install haproxystats
+    pip3 install numpy                                                      &&\
+    pip3 install haproxystats                                               &&\
+    mkdir -p  /etc/haproxystats  /var/lib/haproxy  /var/log/supervisor
 
 # Configure haproxystats
-RUN mkdir -p                             /etc/haproxystats     /var/lib/haproxy
 ADD ./conf_files/haproxystats.conf       /etc/haproxystats
 
-
-
 # Configure supervisord
-RUN mkdir -p                             /var/log/supervisor
 ADD ./conf_files/supervisord.conf        /etc
 
 
