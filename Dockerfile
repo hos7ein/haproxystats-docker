@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="fedorafans.com <hossein.a97@gmail.com>"
+LABEL maintainer="https://fedorafans.com <hossein.a97@gmail.com>"
 
 # ---------------- #
 #   Installation   #
