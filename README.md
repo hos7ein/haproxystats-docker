@@ -29,6 +29,14 @@ To launch a container you can use this instruction:
 ```
 docker run -d --restart always --name [container_name] --hostname=[container_hostname] -v [path_of_haproxystats_config_file]:/etc/haproxystats/haproxystats.conf -v [path_of_haproxy_socket_files]:[path_of_socket-dir]  hos7ein/haproxystats
 ```
+Notes:
+
+- `[container_name]`: The name of the container which you can choose as you wish.
+- `[container_hostname]`: The hostname of the container which you can choose as you wish.
+- `[path_of_haproxystats_config_file]`: The path to your haproxystats configuration file.
+- `[path_of_haproxy_socket_files]`: The path to your haproxy socket files.
+- `[path_of_socket-dir]`: The path of the haproxy socket files inside of container that you have set in the haproxystats.conf file.
+
 
 For example:
 ```
