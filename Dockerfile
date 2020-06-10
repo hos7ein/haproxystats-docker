@@ -13,7 +13,7 @@ RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor       &&\
     mkdir -p  /etc/haproxystats  /var/lib/haproxy  /var/log/supervisor
 
 # Configure haproxystats
-ADD ./conf_files/haproxystats.conf       /etc/haproxystats
+###ADD ./conf_files/haproxystats.conf       /etc/haproxystats
 
 # Configure supervisord
 ADD ./conf_files/supervisord.conf        /etc
