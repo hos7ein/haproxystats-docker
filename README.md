@@ -27,12 +27,12 @@ docker build --tag hos7ein/haproxystats  .
 To launch a container you can use this instruction:
 
 ```
-docker run -it -d --restart always --name [container-name] --hostname=[container-Hostanme] -v [path-of-haproxystats-config-file]:/etc/haproxystats -v [path-of-haproxy-sock-files]:/var/lib/haproxy  hos7ein/haproxystats
+docker run -d --restart always --name [container_name] --hostname=[container_hostname] -v [path_of_haproxystats_config_file]:/etc/haproxystats/haproxystats.conf -v [path_of_haproxy_socket_files]:[path_of_socket-dir]  hos7ein/haproxystats
 ```
 
 For example:
 ```
-docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haproxystats -v /opt/haproxystats:/etc/haproxystats -v /var/lib/haproxy:/var/lib/haproxy  hos7ein/haproxystats
+docker run -d --restart always --name hos7ein-haproxystats --hostname=haproxystats -v /opt/haproxystats/haproxystats.conf:/etc/haproxystats/haproxystats.conf -v /var/lib/haproxy:/run/haproxy  hos7ein/haproxystats
 ```
 
 ### Sample shot ###
@@ -52,4 +52,3 @@ docker run -it -d --restart always --name hos7ein-haproxystats --hostname=haprox
 ## License
 
 haproxystats-docker source code is available under the GPL-3.0 [License](/LICENSE).
-
