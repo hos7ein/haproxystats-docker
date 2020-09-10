@@ -52,6 +52,8 @@ docker run -d --restart always --name hos7ein-haproxystats --hostname=haproxysta
 
 **Project website**: https://github.com/hos7ein/haproxystats-docker
 
+**Personal website**: https://fedorafans.com
+
 **Author**: Hossein Aghaie <hossein.a97@gmail.com>
 
 **Twitter**: Hossein Aghaie [@hos7ein](https://twitter.com/hos7ein)
