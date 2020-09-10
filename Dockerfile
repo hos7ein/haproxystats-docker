@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.12
 LABEL maintainer="https://fedorafans.com <hossein.a97@gmail.com>"
 
 # ---------------- #
