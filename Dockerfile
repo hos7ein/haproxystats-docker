@@ -16,7 +16,7 @@ RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor           
     command = /usr/bin/haproxystats-pull -f /etc/haproxystats/haproxystats.conf    \n\
     stdout_logfile = /var/log/supervisor/%(program_name)s.log                      \n\    
     stderr_logfile = /var/log/supervisor/%(program_name)s.log                      \n\
-    autorestart = tru                                                              \n\
+    autorestart = true                                                             \n\
     [program:haproxystats-process]                                                 \n\
     command = /usr/bin/haproxystats-process -f /etc/haproxystats/haproxystats.conf \n\
     stdout_logfile = /var/log/supervisor/%(program_name)s.log                      \n\            
