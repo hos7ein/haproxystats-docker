@@ -22,7 +22,7 @@ RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor           
     stdout_logfile = /var/log/supervisor/%(program_name)s.log                      \n\            
     stderr_logfile = /var/log/supervisor/%(program_name)s.log                      \n\
     autorestart = true                                                             \
-    " > /etc/supervisord.conf
+    " >> /etc/supervisord.conf
 
 # Configure haproxystats
 ###ADD ./conf_files/haproxystats.conf       /etc/haproxystats
