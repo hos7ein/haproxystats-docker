@@ -1,4 +1,5 @@
 FROM alpine:3.12
+
 LABEL maintainer="https://fedorafans.com <hossein.a97@gmail.com>"
 
 # ---------------- #
@@ -12,16 +13,8 @@ RUN apk add --no-cache gcc g++ python3 py3-pip python3-dev supervisor           
     pip3 install haproxystats                                                        &&\
     mkdir -p  /etc/haproxystats  /var/lib/haproxy  /var/log/supervisor               
 
-
     
 COPY ./conf_files/supervisor/   /etc/supervisor.d/
-# Configure haproxystats
-###ADD ./conf_files/haproxystats.conf       /etc/haproxystats
-
-# Configure supervisord
-###ADD ./conf_files/supervisord.conf        /etc
-
-
 
 
 # -------- #
