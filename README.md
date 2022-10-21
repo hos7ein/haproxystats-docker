@@ -1,6 +1,6 @@
 # haproxystats-docker
 
-##### Introduction
+## Introduction
 
 [haproxystats](https://github.com/unixsurfer/haproxystats) is a statistics
 collector for [HAProxy](https://www.haproxy.org) load balancer which processes
