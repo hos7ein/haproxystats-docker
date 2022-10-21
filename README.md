@@ -2,8 +2,9 @@
 
 ## Introduction
 
-[haproxystats](https://github.com/unixsurfer/haproxystats) is a statistics collector for [HAProxy](https://www.haproxy.org) load balancer which
-processes various statistics and pushes them to graphing systems (Graphite).
+[haproxystats](https://github.com/unixsurfer/haproxystats) is a statistics
+collector for [HAProxy](https://www.haproxy.org) load balancer which processes
+various statistics and pushes them to graphing systems (Graphite).
 It is designed to satisfy the following requirements:
 
 * Fast and configurable processing of HAProxy statistics
@@ -11,7 +12,8 @@ It is designed to satisfy the following requirements:
 * Pull statistics at very low intervals (10secs)
 * Flexible dispatching of statistics to different systems (Graphite,  kafka)
 
-`haproxystats` is great tool which wrote by [Pavlos Parissis](https://github.com/unixsurfer). I am inspired by haproxystats and have dockerized it.
+`haproxystats` is great tool which wrote by [Pavlos Parissis](https://github.com/unixsurfer).
+I am inspired by haproxystats and have dockerized it.
 
 ## Build
 
